@@ -134,7 +134,7 @@
 		6D9D61391E279536001740D8 /* ENTTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7E5F3B1921808B00A4DA30 /* ENTTransport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D613A1E279536001740D8 /* RMSTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E39191DA4A8001C3581 /* RMSTextField.h */; };
 		6D9D613B1E279536001740D8 /* RMSTokenConstraintManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E3B191DA4A8001C3581 /* RMSTokenConstraintManager.h */; };
-		6D9D613C1E279536001740D8 /* RMSTokenView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E3D191DA4A8001C3581 /* RMSTokenView.h */; };
+		6D9D613C1E279536001740D8 /* RMSTokenView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E3D191DA4A8001C3581 /* RMSTokenView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D613D1E279536001740D8 /* ENAFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E23FB18EBA5D500BD7E6E /* ENAFURLConnectionOperation.h */; };
 		6D9D613E1E279536001740D8 /* ENGCOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E23FE18EBA5D500BD7E6E /* ENGCOAuth.h */; };
 		6D9D613F1E279536001740D8 /* KSForwardingWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E240418EBA5D500BD7E6E /* KSForwardingWriter.h */; };
@@ -295,7 +295,7 @@
 		86D49E46191DA4A8001C3581 /* RMSTokenConstraintManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D49E3C191DA4A8001C3581 /* RMSTokenConstraintManager.m */; };
 		86D49E47191DA4A8001C3581 /* RMSTokenConstraintManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D49E3C191DA4A8001C3581 /* RMSTokenConstraintManager.m */; };
 		86D49E48191DA4A8001C3581 /* RMSTokenView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E3D191DA4A8001C3581 /* RMSTokenView.h */; };
-		86D49E49191DA4A8001C3581 /* RMSTokenView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E3D191DA4A8001C3581 /* RMSTokenView.h */; };
+		86D49E49191DA4A8001C3581 /* RMSTokenView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E3D191DA4A8001C3581 /* RMSTokenView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86D49E4A191DA4A8001C3581 /* RMSTokenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D49E3E191DA4A8001C3581 /* RMSTokenView.m */; };
 		86D49E4B191DA4A8001C3581 /* RMSTokenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D49E3E191DA4A8001C3581 /* RMSTokenView.m */; };
 		86F2D802190A348F00C0AA7F /* ENSDKResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BECDD3C7190A2DE7003736EE /* ENSDKResourceLoader.m */; };
