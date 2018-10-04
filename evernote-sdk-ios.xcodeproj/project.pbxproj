@@ -132,7 +132,7 @@
 		6D9D61371E279536001740D8 /* ENTHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7E5F371921808B00A4DA30 /* ENTHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D61381E279536001740D8 /* ENTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7E5F391921808B00A4DA30 /* ENTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D61391E279536001740D8 /* ENTTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = BE7E5F3B1921808B00A4DA30 /* ENTTransport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D9D613A1E279536001740D8 /* RMSTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E39191DA4A8001C3581 /* RMSTextField.h */; };
+		6D9D613A1E279536001740D8 /* RMSTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E39191DA4A8001C3581 /* RMSTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D613B1E279536001740D8 /* RMSTokenConstraintManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E3B191DA4A8001C3581 /* RMSTokenConstraintManager.h */; };
 		6D9D613C1E279536001740D8 /* RMSTokenView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E3D191DA4A8001C3581 /* RMSTokenView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D613D1E279536001740D8 /* ENAFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E23FB18EBA5D500BD7E6E /* ENAFURLConnectionOperation.h */; };
@@ -287,7 +287,7 @@
 		86CD513A19D9DBDF00DCC747 /* ENCommonUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CD513619D9DAD600DCC747 /* ENCommonUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86CD513B19D9DBDF00DCC747 /* ENCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CD513719D9DAD600DCC747 /* ENCommonUtils.m */; };
 		86D49E40191DA4A8001C3581 /* RMSTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E39191DA4A8001C3581 /* RMSTextField.h */; };
-		86D49E41191DA4A8001C3581 /* RMSTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E39191DA4A8001C3581 /* RMSTextField.h */; };
+		86D49E41191DA4A8001C3581 /* RMSTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E39191DA4A8001C3581 /* RMSTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86D49E42191DA4A8001C3581 /* RMSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D49E3A191DA4A8001C3581 /* RMSTextField.m */; };
 		86D49E43191DA4A8001C3581 /* RMSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D49E3A191DA4A8001C3581 /* RMSTextField.m */; };
 		86D49E44191DA4A8001C3581 /* RMSTokenConstraintManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D49E3B191DA4A8001C3581 /* RMSTokenConstraintManager.h */; };
