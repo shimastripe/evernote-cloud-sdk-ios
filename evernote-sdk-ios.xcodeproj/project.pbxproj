@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0BB3D1B11524ED96001C4534 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB3D1B01524ED96001C4534 /* Foundation.framework */; };
 		45CB189A215378A700421539 /* ENSaveToEvernoteViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CB761218FF33D4002F267E /* ENSaveToEvernoteViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45DA0FCE21661B64001E26A8 /* ENTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CB761918FF4554002F267E /* ENTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D5FFC1E23AC27001740D8 /* EDAMAuthenticationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D9D5FFA1E23AC27001740D8 /* EDAMAuthenticationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D5FFD1E23AC27001740D8 /* EDAMAuthenticationTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9D5FFB1E23AC27001740D8 /* EDAMAuthenticationTypes.m */; };
 		6D9D60BF1E279424001740D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB3D1B01524ED96001C4534 /* Foundation.framework */; };
@@ -163,7 +164,7 @@
 		6D9D61581E279536001740D8 /* NSString+ENScrubbing.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E245518EBA5D500BD7E6E /* NSString+ENScrubbing.h */; };
 		6D9D61591E279536001740D8 /* ENPlainNoteContent.h in Headers */ = {isa = PBXBuildFile; fileRef = BECDD2F618F77C0E003736EE /* ENPlainNoteContent.h */; };
 		6D9D615A1E279536001740D8 /* ENHTMLNoteContent.h in Headers */ = {isa = PBXBuildFile; fileRef = BECDD2FA18F78072003736EE /* ENHTMLNoteContent.h */; };
-		6D9D615B1E279536001740D8 /* ENTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CB761918FF4554002F267E /* ENTheme.h */; };
+		6D9D615B1E279536001740D8 /* ENTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CB761918FF4554002F267E /* ENTheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D615C1E279536001740D8 /* ENSDKResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = BECDD3C6190A2DE7003736EE /* ENSDKResourceLoader.h */; };
 		6D9D615D1E279536001740D8 /* ENWebContentTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = BE48C6F519102CC600025618 /* ENWebContentTransformer.h */; };
 		6D9D615E1E279536001740D8 /* ENWebClipNoteBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = BE48C6FB19102DD900025618 /* ENWebClipNoteBuilder.h */; };
@@ -1312,6 +1313,7 @@
 				860DF40B18FCCE51002B4793 /* ENSession.h in Headers */,
 				860DF40D18FCCE51002B4793 /* ENNote.h in Headers */,
 				BE4C731C195B859A001E5EF6 /* ENShareURLHelper.h in Headers */,
+				45DA0FCE21661B64001E26A8 /* ENTheme.h in Headers */,
 				860DF40F18FCCE51002B4793 /* ENNoteContent.h in Headers */,
 				860DF41118FCCE51002B4793 /* ENNotebook.h in Headers */,
 				860DF41318FCCE51002B4793 /* ENResource.h in Headers */,
