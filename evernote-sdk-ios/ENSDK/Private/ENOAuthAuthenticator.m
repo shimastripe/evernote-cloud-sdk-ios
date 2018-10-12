@@ -413,7 +413,7 @@ NSString * ENOAuthAuthenticatorAuthInfoAppNotebookIsLinked = @"ENOAuthAuthentica
             [device isMultitaskingSupported] &&
             self.isMultitaskLoginDisabled==NO) {
             self.state = ENOAuthAuthenticatorStateInProgress;
-            NSString* openURL = [NSString stringWithFormat:@"en://link-sdk/consumerKey/%@/profileName/%@/authorization/%@",self.consumerKey,self.currentProfile,parameters[@"oauth_token"]];
+//            NSString* openURL = [NSString stringWithFormat:@"en://link-sdk/consumerKey/%@/profileName/%@/authorization/%@",self.consumerKey,self.currentProfile,parameters[@"oauth_token"]];
 //            BOOL success = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:openURL]];
 //            if(success == NO) {
 //                // The Evernote app does not support the full URL, falling back
