@@ -400,7 +400,7 @@ NSString * ENOAuthAuthenticatorAuthInfoAppNotebookIsLinked = @"ENOAuthAuthentica
         // the en:// URL scheme, fall back on WebKit for obtaining the OAuth token.
         // This minimizes the chance that the user will have to enter his or
         // her credentials in order to authorize the application.
-        UIDevice *device = [UIDevice currentDevice];
+//        UIDevice *device = [UIDevice currentDevice];
         if(IsEvernoteInstalled() == NO) {
             self.isMultitaskLoginDisabled = YES;
         }
@@ -409,10 +409,10 @@ NSString * ENOAuthAuthenticatorAuthInfoAppNotebookIsLinked = @"ENOAuthAuthentica
             self.isMultitaskLoginDisabled = YES;
         }
         [self verifyCFBundleURLSchemes];
-        if ([device respondsToSelector:@selector(isMultitaskingSupported)] &&
-            [device isMultitaskingSupported] &&
-            self.isMultitaskLoginDisabled==NO) {
-            self.state = ENOAuthAuthenticatorStateInProgress;
+//        if ([device respondsToSelector:@selector(isMultitaskingSupported)] &&
+//            [device isMultitaskingSupported] &&
+//            self.isMultitaskLoginDisabled==NO) {
+//            self.state = ENOAuthAuthenticatorStateInProgress;
 //            NSString* openURL = [NSString stringWithFormat:@"en://link-sdk/consumerKey/%@/profileName/%@/authorization/%@",self.consumerKey,self.currentProfile,parameters[@"oauth_token"]];
 //            BOOL success = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:openURL]];
 //            if(success == NO) {
@@ -421,14 +421,14 @@ NSString * ENOAuthAuthenticatorAuthInfoAppNotebookIsLinked = @"ENOAuthAuthentica
 //                // Restart oAuth dance
 //                [self startOauthAuthentication];
 //            }
-        }
-        else {
+//        }
+//        else {
             // Open a modal ENOAuthViewController on top of our given view controller,
             // and point it at the proper Evernote web page so the user can authorize us.
             NSString *userAuthURLString = [self userAuthorizationURLStringWithParameters:parameters];
             NSURL *userAuthURL = [NSURL URLWithString:userAuthURLString];
             [self openOAuthViewControllerWithURL:userAuthURL];
-        }
+//        }
     } else {
         // OAuth step 4: final callback, with our real token
         NSString *authenticationToken = [parameters objectForKey:@"oauth_token"];
