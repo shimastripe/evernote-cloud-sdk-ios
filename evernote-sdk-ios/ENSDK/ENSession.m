@@ -1638,21 +1638,13 @@ static BOOL disableRefreshingNotebooksCacheOnLaunch;
 #pragma mark - Interaction with Evernote app
 
 - (BOOL)viewNoteInEvernote:(ENNoteRef *)noteRef {
-    if (IsEvernoteInstalled() == NO) {
-        return NO;
-    }
-    
-    NSString *viewNoteURLScheme = [NSString stringWithFormat:@"evernote:///view/%d/%@/%@/%@/", self.userID, [self shardIdForNoteRef:noteRef], noteRef.guid, noteRef.guid];
-    return [[UIApplication sharedApplication] openURL:[NSURL URLWithString:viewNoteURLScheme]];
+    // MEMO: Remove due to using Embedded Framework
+    return NO;
 }
 
 - (BOOL)viewNoteInEvernote:(ENNoteRef *)noteRef callbackURL:(NSString *)callbackURL {
-    if (IsEvernoteInstalled() == NO) {
-        return NO;
-    }
-    
-    NSString *viewNoteURLScheme = [NSString stringWithFormat:@"evernote:///view/%d/%@/%@/%@/?callback=%@", self.userID, [self shardIdForNoteRef:noteRef], noteRef.guid, noteRef.guid, [callbackURL en_stringByUrlEncoding]];
-    return [[UIApplication sharedApplication] openURL:[NSURL URLWithString:viewNoteURLScheme]];
+    // MEMO: Remove due to using Embedded Framework
+    return NO;
 }
 
 #pragma mark - Private routines
