@@ -351,8 +351,119 @@ NSString * ENOAuthAuthenticatorAuthInfoAppNotebookIsLinked = @"ENOAuthAuthentica
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
 // MEMO: Remove due to using Embedded Framework
+
+{
+    // The connections retain this object (their delegate) until they complete. If we've cancelled, just ignore the result.
+    if (self.isCancelled) {
+        return;
+    }
+
+    NSString *string = [[NSString alloc] initWithData:self.receivedData
+                                             encoding:NSUTF8StringEncoding];
+
+    // Trap bad HTTP response status codes.
+    // This might be from an invalid consumer key, a key not set up for OAuth, etc.
+    // Usually this shows up as a 401 response with an error page, so
+    // log it and callback an error.
+    if ([self.response respondsToSelector:@selector(statusCode)]) {
+        NSInteger statusCode = [(id)self.response statusCode];
+        if (statusCode != 200) {
+            NSLog(@"Received error HTTP response code: %ld", (long)statusCode);
+            NSLog(@"%@", string);
+            NSDictionary* userInfo = nil;
+            if(statusCode) {
+                NSNumber* statusCodeNumber = [NSNumber numberWithInteger:statusCode];
+                userInfo = @{@"statusCode": statusCodeNumber};
+            }
+            [self completeAuthenticationWithError:
+             [NSError errorWithDomain:ENErrorDomain
+                                 code:ENErrorCodeConnectionFailed
+                             userInfo:userInfo]];
+            self.receivedData = nil;
+            self.response = nil;
+            return;
+        }
+    }
+
+    NSDictionary *parameters = [[self class] parametersFromQueryString:string];
+
+    if ([parameters objectForKey:@"oauth_callback_confirmed"]) {
+        // OAuth step 2: got our temp token, now get authorization from the user.
+        // Save the token secret, for later use in OAuth step 3.
+        self.tokenSecret = [parameters objectForKey:@"oauth_token_secret"];
+
+        // If the device supports multitasking,
+        // try to get the OAuth token from the Evernote app
+        // on the device.
+        // If the Evernote app is not installed or it doesn't support
+        // the en:// URL scheme, fall back on WebKit for obtaining the OAuth token.
+        // This minimizes the chance that the user will have to enter his or
+        // her credentials in order to authorize the application.
+        UIDevice *device = [UIDevice currentDevice];
+        if(IsEvernoteInstalled() == NO) {
+            self.isMultitaskLoginDisabled = YES;
+        }
+        // This is an override intented for testing/sandbox environments.
+        if(self.useWebAuthenticationOnly == YES) {
+            self.isMultitaskLoginDisabled = YES;
+        }
+        [self verifyCFBundleURLSchemes];
+        if ([device respondsToSelector:@selector(isMultitaskingSupported)] &&
+            [device isMultitaskingSupported] &&
+            self.isMultitaskLoginDisabled==NO) {
+            self.state = ENOAuthAuthenticatorStateInProgress;
+            NSString* openURL = [NSString stringWithFormat:@"en://link-sdk/consumerKey/%@/profileName/%@/authorization/%@",self.consumerKey,self.currentProfile,parameters[@"oauth_token"]];
+//            BOOL success = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:openURL]];
+//            if(success == NO) {
+//                // The Evernote app does not support the full URL, falling back
+//                self.isMultitaskLoginDisabled = YES;
+//                // Restart oAuth dance
+//                [self startOauthAuthentication];
+//            }
+        }
+        else {
+            // Open a modal ENOAuthViewController on top of our given view controller,
+            // and point it at the proper Evernote web page so the user can authorize us.
+            NSString *userAuthURLString = [self userAuthorizationURLStringWithParameters:parameters];
+            NSURL *userAuthURL = [NSURL URLWithString:userAuthURLString];
+            [self openOAuthViewControllerWithURL:userAuthURL];
+        }
+    } else {
+        // OAuth step 4: final callback, with our real token
+        NSString *authenticationToken = [parameters objectForKey:@"oauth_token"];
+        NSString *noteStoreUrl = [parameters objectForKey:@"edam_noteStoreUrl"];
+        NSString *edamUserId = [parameters objectForKey:@"edam_userId"];
+        NSString *webApiUrlPrefix = [parameters objectForKey:@"edam_webApiUrlPrefix"];
+        NSString *expiration = [parameters objectForKey:@"edam_expires"];
+        NSDate *expirationDate = [NSDate dateWithTimeIntervalSince1970:([expiration doubleValue] / 1000.0f)];
+
+        // Evernote doesn't use the token secret, so we can ignore it.
+        // NSString *oauthTokenSecret = [parameters objectForKey:@"oauth_token_secret"];
+
+        // If any of the fields are nil, we can't continue.
+        // Assume an invalid response from the server.
+        if (!authenticationToken || !noteStoreUrl || !edamUserId || !webApiUrlPrefix) {
+            [self completeAuthenticationWithError:[NSError errorWithDomain:ENErrorDomain
+                                                                      code:ENErrorCodeUnknown
+                                                                  userInfo:nil]];
+        } else {
+            // add auth info to our credential store, saving to user defaults and keychain
+            ENCredentials * credentials = [[ENCredentials alloc] initWithHost:self.host
+                                                                   edamUserId:edamUserId
+                                                                 noteStoreUrl:noteStoreUrl
+                                                              webApiUrlPrefix:webApiUrlPrefix
+                                                          authenticationToken:authenticationToken
+                                                               expirationDate:expirationDate];
+            // call our callback, without error.
+            [self completeAuthenticationWithCredentials:credentials usesLinkedAppNotebook:self.userSelectedLinkedAppNotebook];
+            // update the auth state
+            self.state = ENOAuthAuthenticatorStateAuthenticated;
+        }
+    }
+
+    self.receivedData = nil;
+    self.response = nil;
 }
 
 - (void)openOAuthViewControllerWithURL:(NSURL *)authorizationURL
