@@ -19,7 +19,8 @@ BOOL IsIOS8() {
 }
 
 BOOL IsEvernoteInstalled() {
-    return [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"en://"]];
+    // MEMO: Remove due to using Embedded Framework
+    return NO;
 }
 
 @end

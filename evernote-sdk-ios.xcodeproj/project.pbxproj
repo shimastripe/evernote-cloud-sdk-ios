@@ -1436,7 +1436,7 @@
 				TargetAttributes = {
 					6D9D60B61E27940A001740D8 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Q79WDW8YH9;
+						DevelopmentTeam = 95Q9F9WGT3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1918,6 +1918,7 @@
 		6D9D60BC1E27940A001740D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1931,7 +1932,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Q79WDW8YH9;
+				DEVELOPMENT_TEAM = 95Q9F9WGT3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1956,6 +1957,7 @@
 		6D9D60BD1E27940A001740D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1970,7 +1972,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Q79WDW8YH9;
+				DEVELOPMENT_TEAM = 95Q9F9WGT3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
