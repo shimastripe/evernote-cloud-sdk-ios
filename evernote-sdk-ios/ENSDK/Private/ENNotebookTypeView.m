@@ -28,6 +28,7 @@
 
 #import "ENNotebookTypeView.h"
 #import "ENTheme.h"
+#import "ENSDKPrivate.h"
 
 static CGFloat const kCircleRadius = 13;
 
@@ -52,7 +53,7 @@ static CGFloat const kCircleRadius = 13;
 
 - (void)setIsBusiness:(BOOL)isBusiness {
     _isBusiness = isBusiness;
-    UIImage* notebookTypeIcon = isBusiness? [UIImage imageNamed:@"ENSDKResources.bundle/ENBusinessIcon"] : [UIImage imageNamed:@"ENSDKResources.bundle/ENMultiplePeopleIcon"];
+    UIImage* notebookTypeIcon = isBusiness? [UIImage imageNamed:@"ENBusinessIcon" inBundle:ENSDKResourceBundle compatibleWithTraitCollection: nil] : [UIImage imageNamed:@"ENMultiplePeopleIcon" inBundle:ENSDKResourceBundle compatibleWithTraitCollection: nil];
     _imageView.image = [notebookTypeIcon imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     [_imageView sizeToFit];
     [self updateNotebookTypeIconColor];

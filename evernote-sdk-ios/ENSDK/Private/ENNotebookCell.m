@@ -28,6 +28,7 @@
 
 #import "ENNotebookCell.h"
 #import "ENTheme.h"
+#import "ENSDKPrivate.h"
 
 @implementation ENNotebookCell
 
@@ -44,7 +45,7 @@
         [self setSeparatorInset:UIEdgeInsetsMake(0.0, kCellInsetLeft, 0.0, 0.0)];
         self.checkButton = [[UIButton alloc] init];
         [self.contentView addSubview:self.checkButton];
-        [self.checkButton setImage:[[UIImage imageNamed:@"ENSDKResources.bundle/ENCheckIcon"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
+        [self.checkButton setImage:[[UIImage imageNamed:@"ENCheckIcon" inBundle:ENSDKResourceBundle compatibleWithTraitCollection: nil] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
         [self.checkButton sizeToFit];
         [self.checkButton setTintColor:[ENTheme defaultTintColor]];
         [self.checkButton setCenter:CGPointMake(0.6 * kCellInsetLeft, CGRectGetMidY(self.bounds) + 1.0)];
