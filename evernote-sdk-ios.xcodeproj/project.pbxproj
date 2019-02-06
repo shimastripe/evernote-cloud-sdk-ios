@@ -155,7 +155,7 @@
 		6D9D614E1E279536001740D8 /* ENLinkedNoteStoreClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244618EBA5D500BD7E6E /* ENLinkedNoteStoreClient.h */; };
 		6D9D61501E279536001740D8 /* ENNotebookTypeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86C54DDB191D8F0900670865 /* ENNotebookTypeView.h */; };
 		6D9D61511E279536001740D8 /* ENNotebookCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 866F1C701905F01F0072F4C8 /* ENNotebookCell.h */; };
-		6D9D61521E279536001740D8 /* ENNotebookChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244818EBA5D500BD7E6E /* ENNotebookChooserViewController.h */; };
+		6D9D61521E279536001740D8 /* ENNotebookChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244818EBA5D500BD7E6E /* ENNotebookChooserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D61531E279536001740D8 /* ENNoteRefInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244A18EBA5D500BD7E6E /* ENNoteRefInternal.h */; };
 		6D9D61541E279536001740D8 /* ENOAuthAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244B18EBA5D500BD7E6E /* ENOAuthAuthenticator.h */; };
 		6D9D61551E279536001740D8 /* ENOAuthViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244D18EBA5D500BD7E6E /* ENOAuthViewController.h */; };
@@ -380,7 +380,7 @@
 		BE2E24CC18EBA5D500BD7E6E /* ENLinkedNotebookRef.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E244518EBA5D500BD7E6E /* ENLinkedNotebookRef.m */; };
 		BE2E24CD18EBA5D500BD7E6E /* ENLinkedNoteStoreClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244618EBA5D500BD7E6E /* ENLinkedNoteStoreClient.h */; };
 		BE2E24CE18EBA5D500BD7E6E /* ENLinkedNoteStoreClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E244718EBA5D500BD7E6E /* ENLinkedNoteStoreClient.m */; };
-		BE2E24CF18EBA5D500BD7E6E /* ENNotebookChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244818EBA5D500BD7E6E /* ENNotebookChooserViewController.h */; };
+		BE2E24CF18EBA5D500BD7E6E /* ENNotebookChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244818EBA5D500BD7E6E /* ENNotebookChooserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE2E24D018EBA5D500BD7E6E /* ENNotebookChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E244918EBA5D500BD7E6E /* ENNotebookChooserViewController.m */; };
 		BE2E24D118EBA5D500BD7E6E /* ENNoteRefInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244A18EBA5D500BD7E6E /* ENNoteRefInternal.h */; };
 		BE2E24D218EBA5D500BD7E6E /* ENOAuthAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244B18EBA5D500BD7E6E /* ENOAuthAuthenticator.h */; };
@@ -487,6 +487,7 @@
 		BECDD3651908DE2A003736EE /* NSDate+EDAMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E23E818EBA5D500BD7E6E /* NSDate+EDAMAdditions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BECDD3C8190A2DE7003736EE /* ENSDKResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = BECDD3C6190A2DE7003736EE /* ENSDKResourceLoader.h */; };
 		BECDD3C9190A2DE7003736EE /* ENSDKResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BECDD3C7190A2DE7003736EE /* ENSDKResourceLoader.m */; };
+		CB05E180220AD76F00DBE653 /* ENNotebookChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244818EBA5D500BD7E6E /* ENNotebookChooserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1348,6 +1349,7 @@
 				BECDD3591908DE29003736EE /* ENMLConstants.h in Headers */,
 				BECDD35A1908DE2A003736EE /* ENMLUtility.h in Headers */,
 				86CD513A19D9DBDF00DCC747 /* ENCommonUtils.h in Headers */,
+				CB05E180220AD76F00DBE653 /* ENNotebookChooserViewController.h in Headers */,
 				BECDD35B1908DE2A003736EE /* ENEncryptedContentInfo.h in Headers */,
 				BE4BF766192C4B5200564DA3 /* NSString+URLEncoding.h in Headers */,
 				BECDD35C1908DE2A003736EE /* ENMIMEUtils.h in Headers */,
