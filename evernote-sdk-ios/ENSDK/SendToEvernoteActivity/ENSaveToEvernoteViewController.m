@@ -48,16 +48,6 @@ CGFloat kTextLeftPadding = 20;
 @end
 
 @interface ENSaveToEvernoteViewController () <ENNotebookChooserViewControllerDelegate>
-@property (nonatomic, strong) UIBarButtonItem * saveButtonItem;
-@property (nonatomic, strong) UITextField * titleField;
-@property (nonatomic, strong) UITextField * notebookField;
-@property (nonatomic, strong) ENNotebookPickerView *notebookPickerView;
-@property (nonatomic, strong) ENNotebookPickerButton * notebookPickerButton;
-@property (nonatomic, strong) RMSTokenView * tagsView;
-@property (nonatomic, strong) UIWebView * noteView;
-
-@property (nonatomic, strong) NSArray * notebookList;
-@property (nonatomic, strong) ENNotebook * currentNotebook;
 @end
 
 @implementation ENSaveToEvernoteViewController
