@@ -52,5 +52,6 @@
 @property (nonatomic, strong) RMSTokenView * tagsView;
 @property (nonatomic, strong) NSArray * notebookList;
 @property (nonatomic, strong) ENNotebook * currentNotebook;
+- (void)updateCurrentNotebookDisplay;
 
 @end
