@@ -155,7 +155,7 @@
 		6D9D614E1E279536001740D8 /* ENLinkedNoteStoreClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244618EBA5D500BD7E6E /* ENLinkedNoteStoreClient.h */; };
 		6D9D61501E279536001740D8 /* ENNotebookTypeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86C54DDB191D8F0900670865 /* ENNotebookTypeView.h */; };
 		6D9D61511E279536001740D8 /* ENNotebookCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 866F1C701905F01F0072F4C8 /* ENNotebookCell.h */; };
-		6D9D61521E279536001740D8 /* ENNotebookChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244818EBA5D500BD7E6E /* ENNotebookChooserViewController.h */; };
+		6D9D61521E279536001740D8 /* ENNotebookChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244818EBA5D500BD7E6E /* ENNotebookChooserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D61531E279536001740D8 /* ENNoteRefInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244A18EBA5D500BD7E6E /* ENNoteRefInternal.h */; };
 		6D9D61541E279536001740D8 /* ENOAuthAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244B18EBA5D500BD7E6E /* ENOAuthAuthenticator.h */; };
 		6D9D61551E279536001740D8 /* ENOAuthViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244D18EBA5D500BD7E6E /* ENOAuthViewController.h */; };
@@ -175,8 +175,8 @@
 		6D9D61631E279536001740D8 /* ENShareURLHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4C7319195B859A001E5EF6 /* ENShareURLHelper.h */; };
 		6D9D61641E279536001740D8 /* ENSaveToEvernoteActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E245A18EBA5D500BD7E6E /* ENSaveToEvernoteActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D61651E279536001740D8 /* ENSaveToEvernoteViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CB761218FF33D4002F267E /* ENSaveToEvernoteViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D9D61661E279536001740D8 /* ENNotebookPickerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B198551901DB0A008F606A /* ENNotebookPickerButton.h */; };
-		6D9D61671E279536001740D8 /* ENNotebookPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 862E76C5192AB962003D0A32 /* ENNotebookPickerView.h */; };
+		6D9D61661E279536001740D8 /* ENNotebookPickerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B198551901DB0A008F606A /* ENNotebookPickerButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D9D61671E279536001740D8 /* ENNotebookPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 862E76C5192AB962003D0A32 /* ENNotebookPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D9D61691E2796FC001740D8 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9D61681E2796FC001740D8 /* libxml2.2.tbd */; };
 		6D9D61A01E279892001740D8 /* ENSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86F2D7FC1909EDAA00C0AA7F /* ENSDKResources.bundle */; };
 		6D9D61BB1E27B4A8001740D8 /* EvernoteSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E23F418EBA5D500BD7E6E /* EvernoteSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -262,21 +262,21 @@
 		862CE9FB1A757B5100D0DB23 /* ENSSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CE9F31A757B5100D0DB23 /* ENSSKeychainQuery.m */; };
 		862CE9FF1A757C4B00D0DB23 /* ENSSKeychain.strings in Resources */ = {isa = PBXBuildFile; fileRef = 862CE9FD1A757C4B00D0DB23 /* ENSSKeychain.strings */; };
 		862CEA321A786F6700D0DB23 /* ENSDKPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244F18EBA5D500BD7E6E /* ENSDKPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		862E76C7192AB962003D0A32 /* ENNotebookPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 862E76C5192AB962003D0A32 /* ENNotebookPickerView.h */; };
-		862E76C8192AB962003D0A32 /* ENNotebookPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 862E76C5192AB962003D0A32 /* ENNotebookPickerView.h */; };
+		862E76C7192AB962003D0A32 /* ENNotebookPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 862E76C5192AB962003D0A32 /* ENNotebookPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		862E76C8192AB962003D0A32 /* ENNotebookPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 862E76C5192AB962003D0A32 /* ENNotebookPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		862E76C9192AB962003D0A32 /* ENNotebookPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E76C6192AB962003D0A32 /* ENNotebookPickerView.m */; };
 		862E76CA192AB962003D0A32 /* ENNotebookPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E76C6192AB962003D0A32 /* ENNotebookPickerView.m */; };
 		865C383D18F8BA2400ECB2BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 865C383B18F8BA2400ECB2BA /* InfoPlist.strings */; };
 		866F1C721905F01F0072F4C8 /* ENNotebookCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 866F1C701905F01F0072F4C8 /* ENNotebookCell.h */; };
 		866F1C741905F01F0072F4C8 /* ENNotebookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F1C711905F01F0072F4C8 /* ENNotebookCell.m */; };
 		866F1C751905F01F0072F4C8 /* ENNotebookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 866F1C711905F01F0072F4C8 /* ENNotebookCell.m */; };
-		86B198571901DB0A008F606A /* ENNotebookPickerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B198551901DB0A008F606A /* ENNotebookPickerButton.h */; };
+		86B198571901DB0A008F606A /* ENNotebookPickerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B198551901DB0A008F606A /* ENNotebookPickerButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86B198591901DB0A008F606A /* ENNotebookPickerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B198561901DB0A008F606A /* ENNotebookPickerButton.m */; };
 		86B1985A1901DB0A008F606A /* ENNotebookPickerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B198561901DB0A008F606A /* ENNotebookPickerButton.m */; };
 		86C54DDD191D8F0900670865 /* ENNotebookTypeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86C54DDB191D8F0900670865 /* ENNotebookTypeView.h */; };
 		86C54DDF191D8F0900670865 /* ENNotebookTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C54DDC191D8F0900670865 /* ENNotebookTypeView.m */; };
 		86C54DE0191D8F0900670865 /* ENNotebookTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C54DDC191D8F0900670865 /* ENNotebookTypeView.m */; };
-		86CB761418FF33D4002F267E /* ENSaveToEvernoteViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CB761218FF33D4002F267E /* ENSaveToEvernoteViewController.h */; };
+		86CB761418FF33D4002F267E /* ENSaveToEvernoteViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CB761218FF33D4002F267E /* ENSaveToEvernoteViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86CB761618FF33D4002F267E /* ENSaveToEvernoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CB761318FF33D4002F267E /* ENSaveToEvernoteViewController.m */; };
 		86CB761718FF33D4002F267E /* ENSaveToEvernoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CB761318FF33D4002F267E /* ENSaveToEvernoteViewController.m */; };
 		86CB761B18FF4554002F267E /* ENTheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CB761918FF4554002F267E /* ENTheme.h */; };
@@ -380,7 +380,7 @@
 		BE2E24CC18EBA5D500BD7E6E /* ENLinkedNotebookRef.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E244518EBA5D500BD7E6E /* ENLinkedNotebookRef.m */; };
 		BE2E24CD18EBA5D500BD7E6E /* ENLinkedNoteStoreClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244618EBA5D500BD7E6E /* ENLinkedNoteStoreClient.h */; };
 		BE2E24CE18EBA5D500BD7E6E /* ENLinkedNoteStoreClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E244718EBA5D500BD7E6E /* ENLinkedNoteStoreClient.m */; };
-		BE2E24CF18EBA5D500BD7E6E /* ENNotebookChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244818EBA5D500BD7E6E /* ENNotebookChooserViewController.h */; };
+		BE2E24CF18EBA5D500BD7E6E /* ENNotebookChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244818EBA5D500BD7E6E /* ENNotebookChooserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE2E24D018EBA5D500BD7E6E /* ENNotebookChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2E244918EBA5D500BD7E6E /* ENNotebookChooserViewController.m */; };
 		BE2E24D118EBA5D500BD7E6E /* ENNoteRefInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244A18EBA5D500BD7E6E /* ENNoteRefInternal.h */; };
 		BE2E24D218EBA5D500BD7E6E /* ENOAuthAuthenticator.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244B18EBA5D500BD7E6E /* ENOAuthAuthenticator.h */; };
@@ -487,6 +487,8 @@
 		BECDD3651908DE2A003736EE /* NSDate+EDAMAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E23E818EBA5D500BD7E6E /* NSDate+EDAMAdditions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BECDD3C8190A2DE7003736EE /* ENSDKResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = BECDD3C6190A2DE7003736EE /* ENSDKResourceLoader.h */; };
 		BECDD3C9190A2DE7003736EE /* ENSDKResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BECDD3C7190A2DE7003736EE /* ENSDKResourceLoader.m */; };
+		CB05E180220AD76F00DBE653 /* ENNotebookChooserViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2E244818EBA5D500BD7E6E /* ENNotebookChooserViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB05E181220AD92300DBE653 /* ENNotebookPickerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B198551901DB0A008F606A /* ENNotebookPickerButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1348,6 +1350,7 @@
 				BECDD3591908DE29003736EE /* ENMLConstants.h in Headers */,
 				BECDD35A1908DE2A003736EE /* ENMLUtility.h in Headers */,
 				86CD513A19D9DBDF00DCC747 /* ENCommonUtils.h in Headers */,
+				CB05E180220AD76F00DBE653 /* ENNotebookChooserViewController.h in Headers */,
 				BECDD35B1908DE2A003736EE /* ENEncryptedContentInfo.h in Headers */,
 				BE4BF766192C4B5200564DA3 /* NSString+URLEncoding.h in Headers */,
 				BECDD35C1908DE2A003736EE /* ENMIMEUtils.h in Headers */,
@@ -1361,6 +1364,7 @@
 				862CE9F51A757B5100D0DB23 /* ENSSKeychain.h in Headers */,
 				BEA899921917F59C001619FE /* ENStoreClient.h in Headers */,
 				BEA899931917F7E8001619FE /* ENLinkedNotebookRef.h in Headers */,
+				CB05E181220AD92300DBE653 /* ENNotebookPickerButton.h in Headers */,
 				BECDD3611908DE2A003736EE /* NSRegularExpression+ENAGRegex.h in Headers */,
 				BECDD3631908DE2A003736EE /* NSData+EvernoteSDK.h in Headers */,
 				BECDD3651908DE2A003736EE /* NSDate+EDAMAdditions.h in Headers */,
