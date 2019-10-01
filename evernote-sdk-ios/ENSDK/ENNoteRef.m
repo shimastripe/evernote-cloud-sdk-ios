@@ -61,7 +61,7 @@
 
 - (void)encodeWithCoder:(NSCoder *)encoder
 {
-    [encoder encodeInt32:self.type forKey:@"type"];
+    [encoder encodeInt64:self.type forKey:@"type"];
     [encoder encodeObject:self.guid forKey:@"guid"];
     [encoder encodeObject:self.linkedNotebook forKey:@"linkedNotebook"];
 }
